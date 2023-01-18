@@ -38,5 +38,7 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: website
+      - name: Output contents
+        run: ls -la
       - name: Deploy
         run: echo "Deploying..."
