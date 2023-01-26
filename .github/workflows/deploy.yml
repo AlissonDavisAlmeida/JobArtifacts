@@ -2,8 +2,9 @@ name: Deployment
 on:
   push:
     branches:
-      - main
-      - dev
+      - environment
+env:
+  MONGODB_DB_NAME: ""
 jobs:
   test:
     environment: testing
